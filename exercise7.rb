@@ -8,4 +8,10 @@ def display_students(students)
   students.each {|cohort, size| puts "#{cohort}: #{size} students"}
 end
 
+#Add cohort4
+students[:cohort4] = 43
+
 display_students(students)
+
+#Output all cohort names
+puts students.keys
