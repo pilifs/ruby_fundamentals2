@@ -5,19 +5,19 @@ def display_items(list)
   puts "Total items: #{list.length}"
 end
 
-def banana_check(list)
-  puts list.include?("bananas") ? "You don't need to pick up bananas" : "You need to pick up bananas"
+def check(list,item)
+  puts list.include?(item) ? "You don't need to pick up bananas" : "You need to pick up bananas"
 end
 
 # Add rice
 grocery_list << "rice"
 
-#Alphabetize
-grocery_list.sort
-
 display_items(grocery_list)
 
-banana_check(grocery_list)
+#Alphabetize
+grocery_list.sort!
+
+check(grocery_list,"bananas")
 
 # Display second item on grocery list
 puts "The second item on your list is #{grocery_list[1]}"
