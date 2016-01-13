@@ -21,3 +21,7 @@ banana_check(grocery_list)
 
 # Display second item on grocery list
 puts "The second item on your list is #{grocery_list[1]}"
+
+# Can't find salmon, remove and redisplay
+grocery_list.delete("salmon")
+display_items(grocery_list)
