@@ -12,6 +12,12 @@ end
 # Add rice
 grocery_list << "rice"
 
+#Alphabetize
+grocery_list.sort
+
 display_items(grocery_list)
 
 banana_check(grocery_list)
+
+# Display second item on grocery list
+puts "The second item on your list is #{grocery_list[1]}"
