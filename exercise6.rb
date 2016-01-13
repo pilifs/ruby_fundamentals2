@@ -5,7 +5,13 @@ def display_items(list)
   puts "Total items: #{list.length}"
 end
 
+def banana_check(list)
+  puts list.include?("bananas") ? "You don't need to pick up bananas" : "You need to pick up bananas"
+end
+
 # Add rice
 grocery_list << "rice"
 
 display_items(grocery_list)
+
+banana_check(grocery_list)
