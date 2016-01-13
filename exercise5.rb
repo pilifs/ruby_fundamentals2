@@ -1,9 +1,14 @@
 # Fahrenheit to Celsius method
 
 def fahrenheit_to_celsius(fahrenheit)
-  (fahrenheit - 32) * 5/9
+  celsius = (fahrenheit - 32) * 5/9
+  puts "The temp in celsius is #{celsius}"
+  return celsius
 end
 
-puts "Enter a temperature in Fahrenheit to convert to Celsius"
-fahrenheit = gets.to_i
-puts "The temp in celsius is #{fahrenheit_to_celsius(fahrenheit)}"
+def get_fahrenheit
+  puts "Enter a temperature in Fahrenheit to convert to Celsius"
+  gets.to_i
+end
+
+puts fahrenheit_to_celsius(get_fahrenheit)
